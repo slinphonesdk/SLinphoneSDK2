@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoMainActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/call_editText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="号码:" />
+
+    <TextView
+        android:id="@+id/state_textView"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/call_state_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="TextView" />
+
+
+    <Button
+    android:id="@+id/call_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="call"
+    android:text="拔打" />
+
+    <Button
+        android:id="@+id/hangup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="hangup"
+        android:text="挂断" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="accept"
+        android:text="接听" />
+
+</LinearLayout>
